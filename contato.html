@@ -60,7 +60,27 @@ type="image/png">
         <div class="col">
             <div class="card">
                 <div class="card-body vh-100">
-                    conteudo principal
+                    <form action="maito:deivididarocha@outlook.com?subject=Contato via site github" method="post">
+
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" class="form-control">
+
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" name="telefone" class="form-control">
+
+                        <label for="assunto">Assunto</label>
+                        <textarea name="assunto" cols="30" rows="10" class="form-control"></textarea>
+
+                        <button type="reset" class="btn btn-danger">
+                            Limpar
+                        </button>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            Enviar
+                        </button>
+
+
+                    </form>
                 </div>
             </div>
         </div>
