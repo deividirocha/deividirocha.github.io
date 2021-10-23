@@ -19,9 +19,7 @@
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script>
 
-    <link rel="shortcut icon" 
-    href="/Imagens/cursos.png" 
-    type="image/png">
+<link rel="shortcut icon" href="/Imagens/cursos.png" type="image/png">
 
 <body class="container-fluid">
     <div class="row">
@@ -42,16 +40,19 @@
             <div class="card">
                 <div class="card-body vh-100">
                     <div class="button-group-vertical">
-                        <button class="btn btn-outline-primary form-control" onclick="javascript:window.location='/index.html'">
+                        <button class="btn btn-outline-primary form-control"
+                            onclick="javascript:window.location='/index.html'">
                             Inicio
                         </button>
-                        <button class="btn btn-outline-success form-control" onclick="javascript:window.location='/cv.html'">
+                        <button class="btn btn-outline-success form-control"
+                            onclick="javascript:window.location='/cv.html'">
                             CV
                         </button>
                         <button class="btn btn-info form-control" onclick="javascript:window.location='/cursos.html'">
                             Cursos
                         </button>
-                        <button class="btn btn-outline-danger form-control" onclick="javascript:window.location='/contato.html'">
+                        <button class="btn btn-outline-danger form-control"
+                            onclick="javascript:window.location='/contato.html'">
                             Contato
                         </button>
                     </div>
@@ -61,7 +62,51 @@
         <div class="col">
             <div class="card">
                 <div class="card-body vh-100">
-                    conteudo principal
+
+                    <div class="accordion" id="cursos">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="algoritimos_1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#algoritomos_1_conteudo" aria-expanded="true"
+                                    aria-controls="algoritomos_1_conteudo">
+                                    Algoritmos 1
+                                </button>
+                            </h2>
+                            <div id="algoritomos_1_conteudo" class="accordion-collapse collapse show"
+                                aria-labelledby="algoritimos_1" data-bs-parent="#cursos">
+                                <div class="accordion-body">
+                                    Assunto sobre o curso de Algoritimos 1
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" 
+                            id="algoritimos_2">
+                                <button class="accordion-button collapsed" 
+                                type="button" 
+                                data-bs-toggle="collapse"
+                                    data-bs-target="#algoritimos_2_conteudo" 
+                                    aria-expanded="false"
+                                    aria-controls="algoritimos_2_conteudo">
+                                    Algoritmos 2
+                                </button>
+                            </h2>
+                            <div id="algoritimos_2_conteudo"
+                             class="accordion-collapse collapse"
+                                aria-labelledby="algoritimos_2"
+                                 data-bs-parent="#cursos">
+                                <div class="accordion-body">
+                                    Assunto sobre o curso de Algoritimos 2
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="accordion-item"></div>
+                        <div class="accordion-item"></div>
+                        <div class="accordion-item"></div>
+                    </div>
+
                 </div>
             </div>
         </div>
